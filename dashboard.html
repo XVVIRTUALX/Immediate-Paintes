@@ -1,57 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Dashboard | Immediate Painters</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      color: #222;
-    }
-
-    .top-nav {
-      background: #000;
-      color: #ccc;
-      padding: 10px 20px;
-      font-size: 14px;
-    }
-
-    .top-nav a {
-      color: #00b050;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .top-nav span {
-      margin: 0 8px;
-    }
-
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 30px;
-      background: #fff;
-      min-height: 60vh;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Dashboard | Immediate Painters</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+}
+header {
+  background: #0b0b0b;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+header h1 {
+  color: #00b050;
+}
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  text-align: center;
+}
+.card h2 {
+  color: #00b050;
+}
+.note {
+  margin-top: 30px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+a.back {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #00b050;
+  font-weight: bold;
+}
+</style>
 </head>
 
 <body>
 
-  <nav class="top-nav">
-    <a href="https://www.jobsnz.co.nz">JobsNZ</a>
-    <span>›</span>
-    <strong>Immediate Painters</strong>
-  </nav>
+<header>
+  <h1>Your Dashboard</h1>
+  <p>Overview of your activity</p>
+</header>
 
-  <main>
-    <h2>Dashboard</h2>
-    <p>Your dashboard will show job activity here.</p>
-  </main>
+<section>
+
+  <div class="cards">
+    <div class="card">
+      <h2>Pending Quotes</h2>
+      <p>Quotes awaiting review or approval</p>
+    </div>
+
+    <div class="card">
+      <h2>Jobs Won</h2>
+      <p>Approved and confirmed painting jobs</p>
+    </div>
+
+    <div class="card">
+      <h2>Total Quotes</h2>
+      <p>All submitted quotes to date</p>
+    </div>
+
+    <div class="card">
+      <h2>Messages</h2>
+      <p>Conversations with Immediate Painters team</p>
+    </div>
+  </div>
+
+  <p class="note">
+    This dashboard is a placeholder. Additional functionality will be added
+    as the platform develops.
+  </p>
+
+  <a class="back" href="index.html">← Back to home</a>
+
+</section>
 
 </body>
 </html>
+
