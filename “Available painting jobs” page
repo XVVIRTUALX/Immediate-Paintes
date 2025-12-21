@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Available Painting Jobs | Immediate Painters</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #222;
+}
+header {
+  background: #0b0b0b;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+header h1 {
+  color: #00b050;
+}
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+.job {
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+.job h2 {
+  color: #00b050;
+}
+.job p {
+  margin: 5px 0;
+}
+.notice {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+a.back {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #00b050;
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Available Painting Jobs</h1>
+  <p>View current opportunities</p>
+</header>
+
+<section>
+
+  <div class="job">
+    <h2>Residential Interior Paint</h2>
+    <p><strong>Location:</strong> Hamilton</p>
+    <p><strong>Status:</strong> Accepting quotes</p>
+  </div>
+
+  <div class="job">
+    <h2>Exterior Repaint</h2>
+    <p><strong>Location:</strong> Waikato Region</p>
+    <p><strong>Status:</strong> Quotes under review</p>
+  </div>
+
+  <div class="job">
+    <h2>Commercial Touch-Ups</h2>
+    <p><strong>Location:</strong> Auckland</p>
+    <p><strong>Status:</strong> Upcoming</p>
+  </div>
+
+  <div class="notice">
+    Job listings shown are placeholders. Live listings will appear once
+    the platform is fully operational.
+  </div>
+
+  <a class="back" href="index.html">← Back to home</a>
+
+</section>
+
+</body>
+</html>
 
