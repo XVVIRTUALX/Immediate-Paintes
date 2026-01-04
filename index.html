@@ -1,145 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Immediate Painters NZ</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Immediate Painters | JobsNZ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-  :root {
-  --ip-black: #0b0b0b;
-  --ip-dark: #121212;
-  --ip-green: #00B050;
-  --ip-grey: #2a2a2a;
-  --ip-text: #f5f5f5;
-}
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
- background: var(--ip-black);
-color: var(--ip-text);
+  <style>
+    :root {
+      --ip-black: #0b0b0b;
+      --ip-dark: #121212;
+      --ip-green: #00B050;
+      --ip-grey: #2a2a2a;
+      --ip-white: #ffffff;
+      --ip-text-muted: #cccccc;
+    }
 
-}
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--ip-black);
+      color: var(--ip-white);
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px;
+    }
 
-nav {
-  background: #000;
-  padding: 12px 20px;
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-}
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      color: var(--ip-green);
+    }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 14px;
-}
+    h2 {
+      font-size: 26px;
+      margin-top: 40px;
+    }
 
-nav a:hover {
-  text-decoration: underline;
-}
+    h3 {
+      color: var(--ip-white);
+    }
 
-header {
-  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-    url("images/painters-bg.jpg") center/cover no-repeat;
-  color: #fff;
-  padding: 80px 20px;
-  text-align: center;
-}
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--ip-text-muted);
+    }
 
-h1 {
-  color: #00B050;
-  margin-bottom: 10px;
-}
+    .platform-note {
+      font-size: 14px;
+      opacity: 0.8;
+      margin-bottom: 20px;
+    }
 
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 30px 20px;
-}
+    .actions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin: 40px 0;
+    }
 
-.card {
-  background: #121212;
-  border: 1px solid #2a2a2a;
-  border-radius: 12px;
-  padding: 24px;
-  margin-bottom: 20px;
-}
+    .action-card {
+      background: var(--ip-dark);
+      border: 1px solid var(--ip-grey);
+      border-radius: 10px;
+      padding: 25px;
+      text-decoration: none;
+      color: var(--ip-white);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
 
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 14px 22px;
-  background: #00B050;
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-}
+    .action-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  opacity: 0.8;
-}
-</style>
+    .action-card h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: var(--ip-green);
+    }
+
+    .action-card p {
+      font-size: 15px;
+      color: var(--ip-text-muted);
+    }
+
+    hr {
+      margin: 60px 0;
+      border: none;
+      border-top: 1px solid var(--ip-grey);
+    }
+
+    a {
+      color: var(--ip-green);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="how-it-works.html">How it works</a>
-  <a href="why-immediate-painters.html">Why Immediate Painters</a>
-</nav>
+  <p class="platform-note">
+    This platform is part of JobsNZ.
+  </p>
 
-<header>
-  <h1>Immediate Painters NZ</h1>
-  <p>Managed painting projects with professional coordination and oversight</p>
-</header>
+  <h1>Immediate Painters</h1>
 
-<div class="container">
+  <p>
+    A trade-specific platform connecting property owners and managers with
+    professional painting contractors operating in Aotearoa / New Zealand.
+  </p>
 
-  <div class="card">
-    <h2>What we do</h2>
-    <p>
-      Immediate Painters provides a managed painting service for clients who want
-      professional coordination, clear communication, and reliable delivery.
-    </p>
-  </div>
+  <h2>Get started</h2>
 
-  <div class="card">
-    <h2>Request a managed painting project</h2>
-    <p>
-  Immediate Painters has moved
-This service is now delivered through the JobsNZ platform.
+  <div class="actions">
 
-👉 Visit: jobsnz.online/immediate-painters
-    </p>
-    <a class="btn" href="mailto:virtualonlinenz@outlook.com">
-      Contact Immediate Painters
+    <a class="action-card" href="/immediate-painters/request-quote.html">
+      <h3>I need painting work done</h3>
+      <p>Request a quote for residential or commercial painting</p>
     </a>
-  </div>
 
-  <div class="card">
-    <h2>Part of JobsNZ</h2>
-    <p>
-      Immediate Painters is a specialist managed service within the JobsNZ platform and is 
-      currently operating as a pilot service in Hamilton.
-      Additional regions may be added as the service expands.
-    </p>
-    <a class="btn" href="https://jobsnz.co.nz">
-      Go to JobsNZ
+    <a class="action-card" href="/immediate-painters/contractor-register.html">
+      <h3>I am a painting contractor</h3>
+      <p>Register your business to receive job enquiries</p>
     </a>
+
+    <a class="action-card" href="/immediate-painters/team-projects.html">
+      <h3>Place a job with the Immediate Painters team</h3>
+      <p>Managed painting projects with supervision and coordination</p>
+    </a>
+
   </div>
 
-</div>
+  <hr>
 
-<footer>
-  Immediate Painters operates as a managed service within the JobsNZ platform.
-  Platform structure may evolve as services expand.
-</footer>
+  <h2>Add your industry or collaborate</h2>
+
+  <p>
+    JobsNZ is a modular workforce platform hosting multiple industry-specific
+    applications, including Odd Jobs NZ and Immediate Painters.
+  </p>
+
+  <p>
+    If you would like to affiliate with Immediate Painters, contribute to the
+    service, or enquire about team-based project delivery, contact the
+    Virtual Online Contact Centre:
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <a href="mailto:virtualonlinenz@outlook.com">virtualonlinenz@outlook.com</a>
+  </p>
+
+  <p class="platform-note">
+    Immediate Painters is a job-matching and project coordination service only.
+    Employment relationships and compliance obligations remain between users.
+    Refer to Inland Revenue (IRD) and Employment New Zealand for official guidance.
+  </p>
 
 </body>
 </html>
+
